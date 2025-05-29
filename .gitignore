@@ -1,0 +1,5 @@
+.env
+venv/
+.chainlit/
+chainlit.md
+.pytest_cache/
