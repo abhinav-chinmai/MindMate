@@ -3,3 +3,5 @@ venv/
 .chainlit/
 chainlit.md
 .pytest_cache/
+app/jobs/__pycache__/
+app/core/__pycache__/

@@ -2,7 +2,7 @@ from app.core.constants import PROMPT
 import requests
 
 def run_llm(prompt=PROMPT, summary=None):
-    print('receiving response from LLaMA')
+    print('Receiving response from LLaMA...')
     response = requests.post(
         "http://localhost:11434/api/generate",
         json={

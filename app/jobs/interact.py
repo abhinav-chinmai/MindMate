@@ -13,7 +13,7 @@ async def start():
         res = await cl.AskUserMessage(content=question, timeout=500).send()
         answer = res.get("output") if res else None
         responses.append(answer if answer is not None else "No response")
-    summary = "\n".join(f"{q} {a}" for q, a in zip(Questions, responses))
+    summary = "\n".join(f"Q: {q} \nA: {a}" for q, a in zip(Questions, responses))
     # Run the LLaMa model using the summary
     await cl.Message(content="Analyzing your responses...").send()
     analysis = run_llm(summary = summary)
