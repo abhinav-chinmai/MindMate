@@ -1,4 +1,4 @@
-PROMPT = "You should analyze the Mental Health status of the person based on their responses to these questions:\n"
+PROMPT = "You should analyze the Mental Health status of the person based on their responses to these questions and summarize it in 200-300 words:\n"
 
 Questions = [
     # General

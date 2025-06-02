@@ -12,4 +12,6 @@ def run_llm(prompt=PROMPT, summary=None):
         }
     )
     print(f"status code: {response.status_code}")
-    return response.json().get("response", "No response from LLaMA.")
+    llama_response = response.json().get("response", "No response from LLaMA.")
+    print(llama_response)
+    return llama_response
